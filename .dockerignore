@@ -1,0 +1,18 @@
+# packages (ignore node modules, because it installed in build time and Docker doesn`t need to now about local node_modules)
+ node_modules
+
+# test (don't need it on the production)
+ test
+
+ # build (this folder creates in build time, just like node_modules)
+ dist
+
+ .eslintrc.js
+ .gitignore
+ .prettierrc
+ *.md
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+.git
+.gitignore
